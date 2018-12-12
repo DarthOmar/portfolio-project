@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
+
+{% load staticfiles %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../../../favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+
+    <title>Dark Father</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -19,17 +21,17 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Dark Father</a>
+    <a class="navbar-brand" href="{% url 'home' %}">Dark Father</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#">Wisdom</a>
-        <a class="nav-item nav-link" href="#">Conquests</a>
-        <a class="nav-item nav-link" href="#">Sworn Enemies</a>
-        <a class="nav-item nav-link" href="#">The Dark Side</a>
-
+        <a class="nav-item nav-link" href="http://sithacademy.com">Wisdom</a>
+        <a class="nav-item nav-link" href="{% static 'Dr.U_Khan.pdf' %}">Conquest Record</a>
+        <a class="nav-item nav-link" href="https://www.starwars.com/databank/jedi-order">Sworn Enemies</a>
+        <a class="nav-item nav-link" href="https://www.youtube.com/watch?v=jIHF8Xe-O6Y">The Dark Side</a>
+        <a class="nav-item nav-link" href="{% url 'allblogs'%}">Blog</a>
       </div>
     </div>
   </nav>
@@ -44,8 +46,8 @@
           <h2 class="lead text-muted">The Dark Side of the Force is the path to many abilities some consider to be ... unnatural.</h2>
           <p class="lead text-muted">But to truly understand the force, one cannot limit oneself to the dogmatic view of the Jedi.</p>
           <p>
-            <a href="#" class="btn btn-secondary my-2">Yes, its only logical</a>
-            <a href="#" class="btn btn-primary my-2">No, The light is the true way</a>
+            <a href="http://sithacademy.com" class="btn btn-secondary my-2">Yes, its only logical</a>
+            <a href="https://www.starwars.com/databank/jedi-order" class="btn btn-primary my-2">No, The light is the true way</a>
           </p>
         </div>
       </section>
